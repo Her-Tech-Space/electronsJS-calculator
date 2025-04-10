@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Cute Calc App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@105.3,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+
+    <div id="calc">
+      <div id="screen">
+        <input id="display" readonly>
+      </div>
+
+      <div id="keys">
+        <button 
+        onclick="appendToDisplay('1')" id="one"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-1.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 1.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-1.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('2')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-2.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 2.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-2.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('3')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-3.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 3.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-3.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('+')" class="operator"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 4.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 4.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 4.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('4')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 5.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 5.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 5.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('5')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 6.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 6.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 6.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('6')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 7.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 7.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 7.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('-')" class="operator"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 8.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 8.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 8.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('7')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 9.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 9.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 9.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('8')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 10.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 10.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 10.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('9')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 11.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 11.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 11.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('/')" class="operator"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 15.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 15.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 15.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('.')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 13.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 13.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 13.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('0')"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 14.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 14.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 14.png">
+        </button>
+
+        <button 
+        onclick="clearDisplay()"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-17.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group-16.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group-17.png">
+        </button>
+
+        <button 
+        onclick="appendToDisplay('*')" class="operator"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 12.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 12.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 12.png">
+        </button>
+
+        <button 
+        onclick="calculate()"
+        onmousedown="pressButton(this)" 
+        onmouseup="releaseButton(this)" 
+        onmouseleave="releaseButton(this)"
+        data-unpressed="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 16.png"
+        data-pressed="C:\HerTechSpace\something-cute\cute-app\pressed\Group 16.png">
+          <img src="C:\HerTechSpace\something-cute\cute-app\unpressed\Group 16.png">
+        </button>
+      </div>
+
+    </div>
+
+    <script src="calc.js"></script>
+    
+  </body>
+</html>

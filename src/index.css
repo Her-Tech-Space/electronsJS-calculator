@@ -1,0 +1,54 @@
+
+
+body {
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #786058;
+}
+
+
+
+#calc{
+  font-family: Fredoka;
+  background-color: #EDD3C1;
+  border-radius: 20px;
+  width: 550px;
+  height: 850px;
+  overflow: hidden;
+}
+
+#screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+}
+
+#display {
+  padding: 10px;
+  background-color: #f4eee9;
+  border: none;
+  font-size: 5rem;
+  text-align: left;
+  width: 470px;
+  border-radius: 20px;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+  padding: 25px;
+}
+
+
+button {
+  background-color: #EDD3C1;
+  border: none;
+}
+#one button:active{
+  background-image: 'C:\HerTechSpace\something-cute\cute-app\pressed\Group 1.png'
+}
